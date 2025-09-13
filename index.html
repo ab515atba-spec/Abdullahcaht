@@ -53,16 +53,7 @@
         Your browser does not support the audio element.
     </audio>
      <div class="text">GG يا حلو </div>
-    <div class="info" id="ip-info">
-    <div class="text">Tweet : https://discord.gg/BqFfFgsg </div>
-
     <script>
-         fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = JSON.stringify(data, null, 2);
         });
     </script>
 </body>
